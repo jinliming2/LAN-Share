@@ -1,0 +1,15 @@
+language: go
+go:
+  - master
+  - 1.x
+deploy:
+  edge: true
+  provider: releases
+  overwrite: true
+  file:
+    - build/lan-share-*
+  on:
+    tags: true
+    condition: $TRAVIS_GO_VERSION =~ ^1\.
+  token:
+    secure: NylU0nlNiRQPFdYeNrhg4EvhH+SvVEO+AEbaL8leHiY95pOM3kb1I1+j/o4Brk5B9n98q72AUp6fQ/Dw1KMHLUmusnl5STSEGb37dp8zuapPdVW5ZGFlk+3t5yTk/KHF+KuemiyngropT57ovPuGq1DaCgU4hY4DvtiUmHVt+kKvsJ5d+uxAHfdPd6fXWMyEepii3JpRgKEjyAetP7RJxEThk6+2mU9lBvDQcwFxMEkShT85g/tKMiQeoIP09L3HPHYz0wvFyXz33v1EU1S9FLA2Zv+DeHfQ3jaCiNi9eKLeUvHPM4BXskhSNCT3d+3KbG4dzgWNn67aKfqj/SLceOMS1vwBhqurmoMIcHXapY9IwLLSE4vzf35GP3wlIZ8rkCVcHpQAZFNllnCH/ljCzESEFse7jqkcTG2AVncuN86pKg2IzN5Q+k9pbLM+uQ8Wd1AAKo5pC1Jd6QBTU6K4n8oji5CAR63IE0iQRCscVpfsQNroaXQjG/dkXniqfsyADrIKkoKKCBGhnC37E19jOzNwraEtBI5UtwLT5eyiQ+ao6iC5JcVYd6k7DU4MBSCvdS1pRCnCt8nngYj0p5I3IFiNi2NxfR4Al4gSfXCPmzuilcfkcbde2eOklMhkEoWSmr0LbdxdHWyu/jbtntwcGNMjAP4h+FwDTILSg16Wrvg=

@@ -1,5 +1,8 @@
 # LAN-Share
 
+[![Build Status](https://travis-ci.com/jinliming2/LAN-Share.svg?branch=main)](https://travis-ci.com/jinliming2/LAN-Share)
+[![Go Report Card](https://goreportcard.com/badge/github.com/jinliming2/LAN-Share)](https://goreportcard.com/report/github.com/jinliming2/LAN-Share)
+
 Share plain text, images and files in Local area network.
 
 ## Usage
